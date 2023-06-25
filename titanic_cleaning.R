@@ -14,11 +14,6 @@ df <- distinct(df)
 
 df
 
-#Change column names to standard format
-replace_col <- function(x){
-  names(x) <- names(x) %>% str_replace_all("\\.", "_")
-  return(x)
-}
 df <-  replace_col(df)
 print(df)
 
